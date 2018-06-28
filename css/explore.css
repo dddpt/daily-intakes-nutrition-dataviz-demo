@@ -1,0 +1,171 @@
+body {
+    margin: auto;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.histogram-label {
+    font-size: .8em;
+}
+
+.pass-through {
+    pointer-events: none;
+}
+
+#textual h4 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.keyPoint {
+    margin-right: 10px;
+}
+
+#legend-menu h5 {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.deleteFilterMark {
+    cursor: pointer;
+}
+
+#tabs > li > a {
+    color: grey;
+    font-size: .8em;
+    line-height: 1.1;
+    padding: 10px 13px;
+}
+
+#slide-date {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: .9em;
+}
+
+.hidden-stuff {
+    visibility: hidden;
+    /* display: none; */
+}
+
+#slider-and-info input {
+    margin-bottom: 5px;
+}
+
+#tabs {
+    margin-bottom: 3px;
+}
+
+#original-url {
+    font-size: .8em;
+}
+
+.cardinal-label {
+    font-size: .8em;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    padding: 1em;
+    font-size: 16px;
+}
+
+dd {
+    font-size: 16px;
+}
+
+#demo-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*** GRID ***/
+
+#demo-button {
+    grid-area: tutorial;
+}
+
+#title {
+    grid-area: header;
+}
+
+#filter-selection-menu {
+    grid-area: filters;
+}
+
+.dashboard-container {
+    grid-area: components;
+}
+
+#age {
+    grid-area: age;
+}
+
+#bmi {
+    grid-area: bmi;
+}
+
+#textual {
+    grid-area: textual;
+}
+
+#region {
+    grid-area: region;
+}
+
+#nutrients {
+    grid-area: nutrients;
+}
+
+/*** RESPONSIVE GRID ***/
+
+h1 {
+    font-size: 2em;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 700px) {
+    .explore-container {
+        display: grid;
+        grid-gap: 1em;
+        padding-left: .5em;
+        padding-right: .5em;
+        grid-template-columns: auto 200px;
+        grid-template-rows: auto 2em auto;
+        grid-template-areas: 
+            "header     header"
+            "components tutorial"
+            "components filters"
+            "components filters";
+    }
+
+    .dashboard-container {
+        display: grid;
+        grid-gap: 1em .2em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-areas: 
+            "nutrients nutrients nutrients"
+            "textual   textual   textual"
+            "region    age       bmi";
+    }
+
+    #textual { 
+        display: grid;
+        grid-gap: .2em;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

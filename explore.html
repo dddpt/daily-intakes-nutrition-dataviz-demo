@@ -1,0 +1,54 @@
+---
+layout: base
+title: Explore the data
+use-site-title: true
+
+css:
+  - "/css/explore.css"
+  - "/css/skeleton.css"
+  - "/css/leaflet.css"
+  - "/css/introjs.min.css"
+
+js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/d3.min.js"
+  - "/js/d3-scale-chromatic.v1.min.js"
+  - "/js/leaflet.js"
+  - "/js/lodash.js"
+  - "/js/intro.min.js"
+  - "/js/explore/utils.js"
+  - "/js/explore/age.js"
+  - "/js/explore/bmi.js"
+  - "/js/explore/region.js"
+  - "/js/explore/textual.js"
+  - "/js/explore/app.js"
+  - "/js/explore/nutrients.js"
+---
+
+
+<div class="explore-container">
+  <h1 id="title">Nutrients intake across food classes</h1>
+
+  <div id="demo-button">
+    <button type="button" class="btn btn-default" onclick="startTutorial()">Tutorial</button>
+  </div>
+
+  <div class="dashboard-container">
+
+    <div id="nutrients"></div>
+    <div id="textual"></div>
+    <div id="region"></div>
+    <div id="age"></div>
+    <div id="bmi"></div>
+  </div>
+  <div id="filter-selection-menu" data-step="2" data-intro="Filters are listed here, you can remove them by clicking on x. You also get info for the selected avalanche accident.">
+    <div id="filters" >
+      <h4>Filters</h4>
+    </div>
+    <div id="selection">
+      <h4>Selection</h4>
+      <dl></dl>
+    </div>
+  </div>
+
+</div>
