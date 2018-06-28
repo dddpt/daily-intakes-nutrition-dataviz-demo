@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://foodrepo.ch"
+url: "https://tartakower.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -148,9 +148,6 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
-  - data/slf
-  - data/weather
-  - data/map-masks
   - node_modules
   - tools
   - notebooks
