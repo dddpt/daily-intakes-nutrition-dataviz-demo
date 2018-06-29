@@ -1,5 +1,12 @@
 
-const foodclasses = ["oil", "fruit", "vegetable", "tubers", "sugary"]
+const foodclasses = ["oil", "dairy", "vegetable", "tubers", "sugary"]
+const foodclasses_names = {
+  "oil": "Oils, nuts & fats",
+  "dairy": "Meat, dairy & fish",
+  "vegetable": "Vegetables & fruits",
+  "tubers": "Grains & potatoes",
+  "sugary": "Sweets, salty snacks & alcohol"
+}
 const nutrientclasses = ["kcal", "protein", "fat", "carbohydrate"]
 
 function object2array(obj) {

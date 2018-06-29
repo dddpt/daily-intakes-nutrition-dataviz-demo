@@ -29,9 +29,9 @@ $.getJSON('/data/daily_avg_data.json', function (data) {
     updateFilterList();
 
     // to have intro, uncomment
-    /*if (! readCookie('introDone')) {
+    if (! readCookie('introDone')) {
         startTutorial();
-    }*/
+    }
 });
 
 $(window).resize(function () {
@@ -142,7 +142,7 @@ function applyColor(data) {
  * COMPONENT INITIALISATION
  */
 
-console.log("createComponents justbefpre")
+console.log("createComponents justbefore")
 
 function createComponents() {
     data = filterData(dailyAvgIntakesData);

@@ -22,7 +22,7 @@ function calculateNutrientsAvg(dailyAvgData){
   var population = _.sum(_.map(dailyAvgData,d => d["population"] ))
 
   foodclasses.forEach(function(foodc){
-    var line = {foodclass:foodc}
+    var line = {foodclass:foodclasses_names[foodc]}
     nutrientclasses.forEach(function(nutrientc){
       foodnut = foodc+"_"+nutrientc;
       line[nutrientc] = _.sum(_.map(dailyAvgData,d => d["population"]*d[foodnut] )) / population
@@ -131,7 +131,7 @@ function createNutrients(dailyAvgData, addFilter, removeFilter) {
     .selectAll("g")
     .data(nutrientclasses.slice().reverse())
     .enter().append("g")
-      .attr("transform", function(d, i) { return "translate("+(legendTranslateY+i * labelWidth) + ",10)"; });
+      .attr("transform", function(d, i) { return "translate("+(legendTranslateY+i * labelWidth) + ",-33)"; });
 
   //legend squares
   legend.append("rect")
@@ -201,5 +201,10 @@ function updateNutrients(dailyAvgData, addFilter, removeFilter) {
   // data-intro
   nutrientsBarContainer = svgg.select("#nutrients-bar-container").select("g")
     .attr("data-step", "1")
-    .attr("data-intro", d => "This is your nutrients intake for foodclass "+d.foodclass)
+    .attr("data-intro", d => "Here, you have the nutrients intake for "+d.foodclass+". Your nutrients intake are given by the right-hand lighter bars. The left-hand bars gives the average intake for the selected population.")
+
+  first_kcal_bar = svgg.select("[fill]")
+    .attr("data-step", "2")
+    .attr("data-intro", "Note that kilocalories (kcal) are measured on the right-hand axis, while the other nutrients are in gramms, on the left-hand axis.")
+    
 }
