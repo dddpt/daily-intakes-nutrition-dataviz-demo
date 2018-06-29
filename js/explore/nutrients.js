@@ -200,11 +200,11 @@ function updateNutrients(dailyAvgData, addFilter, removeFilter) {
 
   // data-intro
   nutrientsBarContainer = svgg.select("#nutrients-bar-container").select("g")
-    .attr("data-step", "1")
+    .attr("data-step", "2")
     .attr("data-intro", d => "Here, you have the nutrients intake for "+d.foodclass+". Your nutrients intake are given by the right-hand lighter bars. The left-hand bars gives the average intake for the selected population.")
 
   first_kcal_bar = svgg.select("[fill]")
-    .attr("data-step", "2")
+    .attr("data-step", "3")
     .attr("data-intro", "Note that kilocalories (kcal) are measured on the right-hand axis, while the other nutrients are in gramms, on the left-hand axis.")
     
 }

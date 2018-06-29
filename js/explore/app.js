@@ -28,9 +28,11 @@ $.getJSON('/data/daily_avg_data.json', function (data) {
     updateComponents();
     updateFilterList();
 
-    // to have intro, uncomment
+    // intro
     if (! readCookie('introDone')) {
-        startTutorial();
+        setTimeout(function(){
+          startTutorial();
+        }, 500);
     }
 });
 
