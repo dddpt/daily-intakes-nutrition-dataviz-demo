@@ -199,7 +199,7 @@ function updateNutrients(dailyAvgData, addFilter, removeFilter) {
     .attr("y", yryl)
 
   // data-intro
-  svgg.select("#nutrients-bar-container").select("g")
+  nutrientsBarContainer = svgg.select("#nutrients-bar-container").select("g")
     .attr("data-step", "1")
     .attr("data-intro", d => "This is your nutrients intake for foodclass "+d.foodclass)
 }

@@ -4,7 +4,7 @@ title: About this project
 ---
 
 Hello world!
-This is a personalized datavisualisation of your nutrient intakes ;-)
+This is a personalized data-vizualisation of your nutrient intakes ;-)
 
 
 
