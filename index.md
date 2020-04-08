@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Personal Nutrition Data-vizualisation
+title: Personal Nutrition Data-viz Demo
 subtitle: yumy intakes
 use-site-title: true
 ---
