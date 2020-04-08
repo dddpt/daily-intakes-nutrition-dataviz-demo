@@ -20,7 +20,7 @@ var constants = {
 var dailyAvgIntakesData = null;
 
 //$.getJSON('/data/accidents/accidents.json', function (data) {
-$.getJSON('/data/daily_avg_data.json', function (data) {
+$.getJSON('/daily-intakes-nutrition-dataviz-demo/data/daily_avg_data.json', function (data) {
     dailyAvgIntakesData = object2array(data);
 
     d3.select('#filters').append("dl");
