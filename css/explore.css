@@ -4,6 +4,12 @@ body {
     margin-top: 60px;
 }
 
+#dataviz-intro{
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .histogram-label {
     font-size: .8em;
 }
